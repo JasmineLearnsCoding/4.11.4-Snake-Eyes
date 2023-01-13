@@ -1,19 +1,19 @@
+//constant
+var ROLL_COUNT = 0;
+
 function start(){
 	while(true){
-	    //variables
-	    var rollCount = 0;
 	    var dice1 = Randomizer.nextInt(1,6);
 	    var dice2 = Randomizer.nextInt(1,6);
+	    ROLL_COUNT +=1;
 	    
-	    //rolls the dice, prints results while true, increases rollCount by 1
-	    rollCount += 1;
+	    //rolls the dice, prints results while true
 	    println("You rolled " + dice1 +"," + dice2);
 	    
 	    //stops rolling if dice 1 & 2 = 1, prints they rolled snake eyes
         if(dice1 == 1 && dice2 == 1){
-            println("It took you " + rollCount +" roll(s) to get snake eyes.");
+            println("It took you " + ROLL_COUNT +" roll(s) to get snake eyes.");
 	        break;
         }
-    }
+	}
 }
-  
