@@ -3,6 +3,7 @@ var ROLL_COUNT = 0;
 
 function start(){
 	while(true){
+	    //variables
 	    var dice1 = Randomizer.nextInt(1,6);
 	    var dice2 = Randomizer.nextInt(1,6);
 	    ROLL_COUNT +=1;
